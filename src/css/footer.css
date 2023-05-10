@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    background-color: #64c27b;
+    text-align: center;
+    height: 200px;
+    padding: 50px;
+    color: #f2f2f2;
+}
+
+.foot a{
+    color: #f2f2f2;
+    margin-right: 20px;
+    font-size: 32px;
+}
+.foot a:hover{
+    color: #252525;
+}
