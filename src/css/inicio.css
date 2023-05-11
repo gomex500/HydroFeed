@@ -21,6 +21,22 @@
     margin-left: 20%;
 }
 
+.img2{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.p{
+    margin-top: 60px;
+    font-size: 20px;
+    color: #006414;
+    text-align: justify;
+}
+.p2{
+    font-size: 20px;
+    color: #006414;
+    text-align: justify;
+}
 
 
 @media screen and (max-width:900px){
@@ -28,10 +44,20 @@
       width: 50%;
       margin-left: 25%;
     }
+    .img2{
+        width: 100%;
+        margin-left: 1%;
+    }
     .jumbo p{
         font-size: 16px;
     }
     .jumbo{
         width: 100%;
+    }
+    .p{
+        font-size: 16px;
+    }
+    .p2{
+        font-size: 16px;
     }
 }
