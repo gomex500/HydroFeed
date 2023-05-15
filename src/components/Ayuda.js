@@ -1,43 +1,61 @@
 import React, {useState} from "react";
+import axios from 'axios';
 import '../css/ayuda.css'
 
 var Ayuda = () =>{
-    const [mensaje, setMensaje] = useState([]);
-    const [newMensaje, setNewMensaje] = useState('');
+  const [input, setInput] = useState('');
+  const [conversation, setConversation] = useState([]);
 
-    const optenerMensaje = (event) => {
-      setNewMensaje(event.target.value);
-    };
+  const conversacion = async (e) =>{
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:5000/chat', {input: input});
 
-    const enviarMensaje = (event) => {
-      event.preventDefault();
-      if (newMensaje.trim() !== '') {
-        const message = {
-          content: newMensaje,
-          author: 'Usuario',
-          timestamp: new Date().toLocaleTimeString(),
-        };
-        setMensaje([...mensaje, message]);
-        setNewMensaje('');
-      }
-    };
+      const Usuario = {
+        user: 'Tu',
+        message: input,
+        type: 'user'
+      };
 
+      const bot = {
+        user: 'HydroBot',
+        message: response.data.response,
+        type: 'bot'
+      };
+      setConversation((prevConversation) => [
+        ...prevConversation,
+        Usuario,
+        bot
+      ]);
 
+      setInput('');
+
+    } catch (error) {
+      
+    }
+  }
 
     return(
         <div className="container-fluid">
             <div className="mensajes">
-                {mensaje.map((message, index) => (
-                <div key={index}>
-                    <strong>{message.author}: </strong>
-                    <span>{message.content}</span>
+                {conversation.map((message, index) => (
+                <div key={index} className={`message ${message.type === 'user' ? 'user' : 'bot animate__animated animate__bounceInLeft'}`}>
+                    <strong>{message.user}:  </strong>{message.message}
                 </div>
                 ))}
             </div>
             <div className="mensaje">
-                <form onSubmit={enviarMensaje}>
-                    <input type='text' className="form-control inpt" value={newMensaje} onChange={optenerMensaje} placeholder="ingrese su pregunda"/>
-                    <button className="btn btn1"><i class="bi bi-send-fill"></i></button>
+                <form onSubmit={conversacion}>
+                    <input 
+                      type='text'
+                      className="form-control inpt"
+                      value={input}
+                      onChange={(e) => setInput(e.target.value)}
+                      placeholder="ingrese su pregunda"
+                    />
+                    <button type="submit" className="btn btn1">
+                      <i class="bi bi-send-fill"></i>
+                    </button>
                 </form>
             </div>
         </div>
