@@ -1,15 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import axios from 'axios';
 import '../css/ayuda.css'
 
 var Ayuda = () =>{
   const [input, setInput] = useState('');
   const [conversation, setConversation] = useState([]);
+  const chatboxRef = useRef(null);
 
   const conversacion = async (e) =>{
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/chat', {input: input});
+      const response = await axios.post('https://hydrobot.onrender.com/chat', {input: input});
 
       const Usuario = {
         user: 'Tu',
@@ -35,9 +36,15 @@ var Ayuda = () =>{
     }
   }
 
+  useEffect(() => {
+    const chatboxElement = chatboxRef.current;
+    chatboxElement.scrollTop = chatboxElement.scrollHeight;
+  }, [conversation]);
+
+
     return(
         <div className="container-fluid">
-            <div className="mensajes">
+            <div  ref={chatboxRef} className="mensajes">
                 {conversation.map((message, index) => (
                 <div key={index} className={`message ${message.type === 'user' ? 'user' : 'bot animate__animated animate__bounceInLeft'}`}>
                     <strong>{message.user}:  </strong>{message.message}
