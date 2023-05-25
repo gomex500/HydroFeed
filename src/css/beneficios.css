@@ -1,5 +1,26 @@
-.carusel{
-    width: 60%;
-    margin: 0 auto;
-    color: #2a8c4a;;
+.fh1{
+    width: 40%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.t{
+    margin-bottom: 50px;
+}
+
+.pa{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:900px){
+    .fh1{
+        width: 50%;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .pa{
+        margin-bottom: 20px;
+        text-align: justify;
+    }
 }
