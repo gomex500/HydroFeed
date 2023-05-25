@@ -1,8 +1,11 @@
 import React from "react";
+import '../css/beneficios.css'
 
 var Beneficios = () =>{
     return(
-        <h1>Beneficios</h1>
+        <div className="continer-fluid">
+            
+        </div>
     )
 }
 

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
 body{
   background-image: url('../img/fondoHydroFeed.png');
+  /* font-family: 'Montserrat Alternates', sans-serif; */
 }
