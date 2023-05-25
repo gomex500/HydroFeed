@@ -10,8 +10,8 @@ var Ayuda = () =>{
   const conversacion = async (e) =>{
     e.preventDefault();
     try {
-      // const response = await axios.post('https://hydrobot.onrender.com/chat', {input: input});
-      const response = await axios.post('http://127.0.0.1:5000/chat', {input: input});
+      const response = await axios.post('https://hydrobot.onrender.com/chat', {input: input});
+      // const response = await axios.post('http://127.0.0.1:5000/chat', {input: input});
       const Usuario = {
         user: 'Tu',
         message: input,
