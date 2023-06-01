@@ -26,6 +26,9 @@ export default class Navbar extends Component {
                 <a className="nav-link" href="/proceso"><i class="bi bi-gear-fill"></i> Proceso</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="/Juego"><i class="bi bi-controller"></i> Juego</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/ayuda"> <i class="bi bi-info-circle-fill"></i> Ayuda</a>
               </li>
               <li className="nav-item">

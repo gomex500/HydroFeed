@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../css/ayuda.css'
 
 var Ayuda = () =>{
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(''); 
   const [conversation, setConversation] = useState([]);
   const chatboxRef = useRef(null);
 

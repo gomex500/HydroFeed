@@ -6,6 +6,7 @@ import Beneficios from './Beneficios';
 import Procesos from './Procesos';
 import Ayuda from './Ayuda';
 import '../css/menu.css';
+import Juego from './Juego';
 
 function Menu() {
   return (
@@ -16,6 +17,7 @@ function Menu() {
           <Route path='/beneficios' element={<Beneficios/>}/>
           <Route path='/proceso' element={<Procesos/>}/>
           <Route path='/ayuda' element={<Ayuda/>}/>
+          <Route path='/juego' element={<Juego/>}/>
         </Routes>
       <Footer/>
     </div>

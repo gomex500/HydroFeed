@@ -1,0 +1,11 @@
+.game{
+    margin: 0 auto;
+    background-color: #252525;
+    width: 300px;
+}
+iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 520px;
+}
