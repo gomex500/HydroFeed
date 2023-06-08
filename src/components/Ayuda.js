@@ -32,7 +32,6 @@ var Ayuda = () =>{
       setInput('');
 
     } catch (error) {
-      
     }
   }
 

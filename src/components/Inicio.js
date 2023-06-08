@@ -4,7 +4,6 @@ import logo from "../img/logoHydroFeed.png"
 import img2 from '../img/img2.png'
 import img1 from '../img/img1.png'
 import humus from '../img/humus.png'
-import bloque from '../img/bloque.png'
 
 var Inicio = () =>{
     return(
@@ -109,40 +108,6 @@ var Inicio = () =>{
                             </li>
                             <li className="li">
                                 <b>Seguro y respetuoso con el medio ambiente: </b>El humus de lombriz es un abono orgánico completamente natural, libre de químicos sintéticos o aditivos dañinos. Es seguro de usar y no contamina el suelo ni el agua subterránea.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="container-fluid row">
-                    <h3 className="titulo">Bloque Nutricional</h3>
-                    <div className="col-12 col-lg-4">
-                        <img src={bloque} className='bloque' alt='img3'/>
-                    </div>
-                    <div className="col-12 col-lg-8">
-                        <p className="p">El bloque nutricional, también conocido como bloque multinutricional o suplemento nutricional, es una forma concentrada de alimento destinada a proveer nutrientes esenciales para el ganado. Consiste en una mezcla compactada de ingredientes como sales minerales, vitaminas, proteínas y carbohidratos, entre otros componentes.</p>
-                    </div>
-                </div>
-                <div className="container-fluid row">
-                    <h3 className="titulo">Características destacadas del Bloque Nutricional</h3>
-                    <div className="col-12">
-                        <ul>
-                            <li className="li">
-                                <b>Composición equilibrada: </b>Los bloques nutricionales están formulados para proporcionar un equilibrio adecuado de nutrientes esenciales, como proteínas, minerales, vitaminas y energía. La proporción de nutrientes puede variar según las necesidades específicas de cada especie animal y las condiciones de alimentación.
-                            </li>
-                            <li className="li">
-                                <b>Alta densidad de nutrientes: </b>A pesar de su tamaño compacto, los bloques nutricionales contienen una alta concentración de nutrientes, lo que permite a los animales obtener una cantidad significativa de nutrientes esenciales en cada lamido o consumo.
-                            </li>
-                            <li className="li">
-                                <b>Acceso controlado: </b>Los bloques nutricionales se colocan en lugares estratégicos, como comederos o áreas de pastoreo, donde los animales pueden lamerlos o consumirlos según su necesidad. De esta manera, se asegura un acceso controlado y una ingesta adecuada de nutrientes.
-                            </li>
-                            <li className="li">
-                                <b>Suplemento todo en uno: </b>El bloque nutricional es una forma conveniente de proporcionar múltiples nutrientes en un solo suplemento. Esto simplifica la suplementación alimentaria y reduce la necesidad de administrar varios suplementos individuales.
-                            </li>
-                            <li className="li">
-                                <b>Estimulación del consumo de fibra: </b>Algunos bloques nutricionales contienen ingredientes que estimulan el consumo de fibra, como melazas o subproductos de la industria agrícola. Esto ayuda a mejorar la digestión y el aprovechamiento de los alimentos fibrosos.
-                            </li>
-                            <li className="li">
-                                <b>Mejora del estado nutricional: </b>El uso adecuado de los bloques nutricionales puede ayudar a prevenir o corregir deficiencias nutricionales en el ganado, lo que a su vez contribuye a mejorar su salud, crecimiento, producción de leche o carne, y reproducción.
                             </li>
                         </ul>
                     </div>
