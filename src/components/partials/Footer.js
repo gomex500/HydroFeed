@@ -7,19 +7,19 @@ export default class Footer extends Component {
       <div className="container-fluid footer">
         <div className="foot" id="footer">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=100095312241878&mibextid=ZbWKwL"
             target="_blank"
             rel="noopener noreferrer">
             <i class="bi bi-facebook"></i>
           </a>
           <a
-            href="https://github.com/gomex500"
+            href="https://wa.me/message/TYF5RNNKI3YZM1"
             target="_blank"
             rel="noopener noreferrer">
             <i class="bi bi-whatsapp"></i>
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://instagram.com/hydro_feed?igshid=MzNlNGNkZWQ4Mg=="
             target="_blank"
             rel="noopener noreferrer">
             <i class="bi bi-instagram"></i>
