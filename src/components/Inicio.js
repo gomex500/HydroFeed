@@ -14,7 +14,7 @@ var Inicio = () =>{
                         <img className="img1 animate__animated animate__bounce" src={logo} alt="logo"/>
                     </div>
                     <div className="col-12 col-lg-8">
-                        <p><strong>"HydroFeed"</strong> La vanguardia en la alimentación ganadera con forraje hidropónico, humus de lombriz y bloques nutricionales. Supera la escasez de alimentos, brinda nutrición de calidad y cuida del medio ambiente. ¡Alimenta a tu ganado de manera innovadora y sostenible con HydroFeed!"</p>
+                        <p><strong>"HydroFeed"</strong> La vanguardia en la alimentación ganadera con forraje hidropónico y humus de lombriz. Supera la escasez de alimentos, brinda nutrición de calidad y cuida del medio ambiente. ¡Alimenta a tu ganado de manera innovadora y sostenible con HydroFeed!"</p>
                         <p><strong>"HydroFeed"</strong> Nutrición Abundante en Cualquier Estación del Año.</p>
                     </div>
                 </div>
